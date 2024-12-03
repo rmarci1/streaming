@@ -1,0 +1,7 @@
+CREATE TABLE songs {
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    cim VARCHAR(200) NOT NULL,
+    szerzo VARCHAR(200) NOT NULL,
+    hossz INT NOT NULL,
+    ar INT NOT NULL,
+}

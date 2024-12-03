@@ -10,5 +10,17 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url = env("DATABASE_URL")
+}
+model songs {
+  id Int @id @default(autoincrement())
+  cim String 
+  szerzo String
+  hossz Int
+  ar Int
+  ertekeles Int
+}
+model playlist{
+  id Int @id @default(autoincrement())
+  nev String
 }
